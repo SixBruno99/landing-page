@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <Box
       height="300px"
-      bg="purple.800"
+      bg="#2A2F4F"
       justifyContent="center"
       display="flex"
       alignItems="center"
@@ -12,7 +12,6 @@ export const Header = () => {
       boxShadow="rgba(0, 0, 0, 0.1) 0px 10px 20px"
     >
       <Text
-        color="white"
         fontSize="48px"
         fontWeight="bold"
         textAlign="center"
