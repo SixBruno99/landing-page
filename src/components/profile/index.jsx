@@ -6,7 +6,6 @@ import Logo from "../../assets/logo-instageam.jpg";
 export const Profile = () => {
   return (
     <Flex justifyContent="center">
-      <Flex w="90%" justifyContent="center">
         <Avatar
           size="2xl"
           name="Letícia Baldin"
@@ -33,7 +32,6 @@ export const Profile = () => {
             </Text>
           </Flex>
         </Box>
-      </Flex>
     </Flex>
   );
 };

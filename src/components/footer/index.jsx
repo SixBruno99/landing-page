@@ -10,6 +10,7 @@ export const Footer = () => {
       alignItems="center"
       borderRadius="120px 120px 0 0"
       boxShadow="rgba(0, 0, 0, 0.1) 0px 10px 20px"
+      marginTop="4rem"
     >
       <Text
         fontSize="48px"
