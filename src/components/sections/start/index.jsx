@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 // Images imports
-import Exemple1 from "../../../assets/Images/exemple1.jpg";
-import Exemple2 from "../../../assets/Images/exemple2.jpg";
+import Exemple1 from "../../../assets/images/exemple1.jpg";
+import Exemple2 from "../../../assets/images/exemple2.jpg";
 
 export const Start = () => {
   return (
@@ -14,7 +14,7 @@ export const Start = () => {
         marginTop="4rem"
         fontSize="22px"
         textAlign="center"
-        color="purple.700"
+        color="purple.800"
       >
         Provavelmente, se você escolheu essa área, já deve ter visto alguns
         vídeos de faculdades a se fazer, ou sobre o mercado de trabalho e a
@@ -33,7 +33,7 @@ export const Start = () => {
         marginTop="2rem"
         fontSize="18px"
         textAlign="end"
-        color="purple.700"
+        color="purple.800"
         textDecoration="underline"
       >
         Organizar as ideias de
@@ -59,7 +59,7 @@ export const Start = () => {
         marginTop="2rem"
         fontSize="22px"
         textAlign="center"
-        color="purple.700"
+        color="purple.800"
         onClick={() =>
           window.open(
             "https://kenzie.com.br/blog/logica-de-programacao/",

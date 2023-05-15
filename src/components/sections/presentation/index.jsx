@@ -10,7 +10,7 @@ export const Presentation = () => {
         marginTop="4rem"
         fontSize="22px"
         textAlign="center"
-        color="purple.700"
+        color="purple.800"
       >
         Oi pessoal!
         <br /> Sou a Letícia, tenho 19 anos e faz cerca de 2 anos que resolvi
