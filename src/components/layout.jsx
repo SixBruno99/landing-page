@@ -7,6 +7,7 @@ import { Profile } from "./profile";
 import { Presentation } from "./sections/presentation";
 import { Start } from "./sections/start";
 import { Choice } from "./sections/choice";
+import { Portifolio } from "./sections/portfolio";
 
 export const Layout = () => {
   return (
@@ -20,6 +21,7 @@ export const Layout = () => {
         <Presentation />
         <Start />
         <Choice />
+        <Portifolio />
       </Box>
       <Footer />
     </Flex>

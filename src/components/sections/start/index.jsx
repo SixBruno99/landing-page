@@ -15,6 +15,8 @@ export const Start = () => {
         fontSize="22px"
         textAlign="center"
         color="purple.800"
+        fontWeight="500"
+        px="1rem"
       >
         Provavelmente, se você escolheu essa área, já deve ter visto alguns
         vídeos de faculdades a se fazer, ou sobre o mercado de trabalho e a
@@ -47,7 +49,8 @@ export const Start = () => {
         marginTop="2rem"
         fontSize="22px"
         textAlign="center"
-        color="purple.700"
+        color="purple.800"
+        fontWeight="500"
       >
         Trouxe alguns exemplos de informações gratuitas:
       </Text>

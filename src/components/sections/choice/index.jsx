@@ -24,6 +24,8 @@ export const Choice = () => {
         fontSize="22px"
         textAlign="center"
         color="purple.800"
+        fontWeight="500"
+        px="1rem"
       >
         Calma, de novo kkkkkkk. Antes de escolher uma linguagem e se aprofundar
         nos estudos, vamos lembrar que:
@@ -32,12 +34,13 @@ export const Choice = () => {
         marginTop="2rem"
         fontSize="22px"
         textAlign="center"
-        fontWeight="semibold"
         color="purple.800"
+        fontWeight="500"
+        px="2rem"
       >
         <ListItem>
           Existem muitas áreas na tecnologia, não apenas programação. Dê uma
-          pesquisada sobre e veja qual chama mais chama sua atenção0.
+          pesquisada sobre e veja qual chama mais chama sua atenção.
         </ListItem>
         <ListItem>
           Existem 2 stacks principais: Front-end e Back-end. Escolha alguma das
@@ -101,6 +104,7 @@ export const Choice = () => {
         fontWeight="semibold"
         fontStyle="italic"
         color="purple.800"
+        px="1rem"
       >
         Use um Roadmap! É um ótimo guia para se utilizar após ter escolhido uma
         stack e uma linguagem.

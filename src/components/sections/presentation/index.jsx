@@ -11,6 +11,8 @@ export const Presentation = () => {
         fontSize="22px"
         textAlign="center"
         color="purple.800"
+        fontWeight="500"
+        px="1rem"
       >
         Oi pessoal!
         <br /> Sou a Letícia, tenho 19 anos e faz cerca de 2 anos que resolvi
