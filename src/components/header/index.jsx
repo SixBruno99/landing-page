@@ -9,7 +9,7 @@ export const Header = () => {
       display="flex"
       alignItems="center"
       borderRadius="0 0 120px 120px"
-      boxShadow="rgba(0, 0, 0, 0.1) 0px 10px 20px"
+      boxShadow="rgba(0, 0, 0, 0.3) 0px 10px 20px"
       marginBottom="4rem"
     >
       <Text

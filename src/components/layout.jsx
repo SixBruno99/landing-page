@@ -9,6 +9,9 @@ import { Start } from "./sections/start";
 import { Choice } from "./sections/choice";
 import { Portifolio } from "./sections/portfolio";
 import { MarketPosition } from "./sections/market-position";
+import { Tips } from "./sections/tips";
+
+
 
 export const Layout = () => {
   return (
@@ -24,6 +27,7 @@ export const Layout = () => {
         <Choice />
         <Portifolio />
         <MarketPosition />
+        <Tips />
       </Box>
       <Footer />
     </Flex>

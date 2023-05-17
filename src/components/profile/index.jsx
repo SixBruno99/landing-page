@@ -11,7 +11,7 @@ export const Profile = () => {
           name="Letícia Baldin"
           bg="purple.700"
           color="white"
-          src=""
+          src="https://github.com/leticiabaldin.png"
         />
         <Box paddingLeft="3rem">
           <Text fontSize="32px" fontWeight="semibold" color="purple.800">
