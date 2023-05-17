@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <Box
       height="300px"
-      bg="#2A2F4F"
+      bg="#12152B"
       justifyContent="center"
       display="flex"
       alignItems="center"
@@ -17,7 +17,7 @@ export const Header = () => {
         fontWeight="bold"
         textAlign="center"
         w="500px"
-        bgGradient="linear-gradient(to right, #0098db, #afbbf2,	#b498d4, #ca25e1)"
+        bgGradient="linear-gradient(to right, #4AC7FA, #E649F5)"
         bgClip="text"
       >
         MANUAL DE DICAS PARA INICIANTES

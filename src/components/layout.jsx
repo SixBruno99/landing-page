@@ -8,6 +8,7 @@ import { Presentation } from "./sections/presentation";
 import { Start } from "./sections/start";
 import { Choice } from "./sections/choice";
 import { Portifolio } from "./sections/portfolio";
+import { MarketPosition } from "./sections/market-position";
 
 export const Layout = () => {
   return (
@@ -22,6 +23,7 @@ export const Layout = () => {
         <Start />
         <Choice />
         <Portifolio />
+        <MarketPosition />
       </Box>
       <Footer />
     </Flex>

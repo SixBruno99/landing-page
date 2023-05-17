@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <Box
       height="300px"
-      bg="#2A2F4F"
+      bg="#12152B"
       justifyContent="center"
       display="flex"
       alignItems="center"
@@ -17,7 +17,7 @@ export const Footer = () => {
         fontWeight="bold"
         textAlign="center"
         w="500px"
-        bgGradient="linear-gradient(to right, #1898FF, #ca25e1)"
+        bgGradient="linear-gradient(to right, #4AC7FA, #E649F5)"
         bgClip="text"
       >
         Obrigada!
