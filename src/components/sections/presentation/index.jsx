@@ -1,6 +1,8 @@
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 
 export const Presentation = () => {
+  const [isLargerThan624] = useMediaQuery('(min-width: 624px)')
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic">
@@ -8,7 +10,7 @@ export const Presentation = () => {
       </Heading>
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"

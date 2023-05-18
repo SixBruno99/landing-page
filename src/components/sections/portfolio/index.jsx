@@ -1,4 +1,11 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 // Images imports
 import GitHub from "../../../assets/images/github-logo.png";
@@ -6,6 +13,8 @@ import Git from "../../../assets/images/git-logo.png";
 import PortifolioImage from "../../../assets/images/portifolio.png";
 
 export const Portifolio = () => {
+  const [isLargerThan624] = useMediaQuery("(min-width: 624px)");
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic" maxW="90%">
@@ -13,7 +22,7 @@ export const Portifolio = () => {
       </Heading>
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -23,12 +32,16 @@ export const Portifolio = () => {
         paralelos aos cursos que estiver fazendo. O aprendizado na prática
         costuma ajudar bastante.
       </Text>
-      <Flex>
-        <Image boxSize="8rem" objectFit="contain" src={GitHub} />
+      <Flex alignItems="center">
+        <Image
+          boxSize={isLargerThan624 ? "8rem" : "7rem"}
+          objectFit="contain"
+          src={GitHub}
+        />
         <Box>
           <Text
             marginTop="2rem"
-            fontSize="22px"
+            fontSize={isLargerThan624 ? "22px" : "18px"}
             textAlign="center"
             fontWeight="bold"
             fontStyle="italic"
@@ -38,7 +51,7 @@ export const Portifolio = () => {
           </Text>
           <Text
             marginTop="1rem"
-            fontSize="22px"
+            fontSize={isLargerThan624 ? "22px" : "20px"}
             textAlign="center"
             fontWeight="500"
             fontStyle="italic"
@@ -51,7 +64,7 @@ export const Portifolio = () => {
       </Flex>
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -75,7 +88,7 @@ export const Portifolio = () => {
         fontStyle="italic"
         textAlign="center"
         color="purple.800"
-        px="2rem"
+        px={isLargerThan624 ? "2rem" : "0.5rem"}
       >
         Para subir seus projetos no Github, é necessário usar os comandos do
         <br />
@@ -88,8 +101,8 @@ export const Portifolio = () => {
         TI.
       </Text>
       <Text
-        marginTop="0.5rem"
-        fontSize="22px"
+        marginY="0.5rem"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         fontWeight="600"
         color="purple.800"
         px="2rem"
@@ -97,21 +110,26 @@ export const Portifolio = () => {
         OU
       </Text>
       <Text
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         fontWeight="500"
         textAlign="center"
         color="purple.800"
-        px="2rem"
+        px={isLargerThan624 ? "2rem" : "0.5rem"}
       >
         Crie um portfólio para treinar a linguagem que você está estudando
         naquele momento(principalmente se for Front-end)
       </Text>
-      <Flex marginTop="2rem">
-        <Text fontSize="22px" fontWeight="600" color="purple.800" px="2rem">
+      <Box marginTop="2rem">
+        <Text
+          fontSize={isLargerThan624 ? "22px" : "20px"}
+          fontWeight="600"
+          color="purple.800"
+          px="2rem"
+        >
           Exemplo:
         </Text>
-        <Image marginLeft="16" objectFit="scale-down" src={PortifolioImage} />
-      </Flex>
+        <Image margin="auto" marginTop="2rem" src={PortifolioImage} />
+      </Box>
     </Box>
   );
 };

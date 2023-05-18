@@ -7,6 +7,7 @@ import {
   ListItem,
   OrderedList,
   Text,
+  useMediaQuery
 } from "@chakra-ui/react";
 
 // Images imports
@@ -14,6 +15,8 @@ import FrontEnd from "../../../assets/images/front-end.png";
 import BackEnd from "../../../assets/images/back-end.png";
 
 export const Choice = () => {
+  const [isLargerThan624] = useMediaQuery('(min-width: 624px)')
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic">
@@ -21,7 +24,7 @@ export const Choice = () => {
       </Heading>
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -32,7 +35,7 @@ export const Choice = () => {
       </Text>
       <OrderedList
         marginTop="2rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -65,18 +68,18 @@ export const Choice = () => {
       <Grid
         gridTemplateColumns="1fr 1fr"
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         fontWeight="semibold"
         color="purple.800"
-        gap={10}
+        gap={isLargerThan624 ? 10 : 4}
       >
         <GridItem dir="column">
-          <Image boxSize="8rem" src={FrontEnd} margin="auto" />
-          <Text marginTop="1rem" fontWeight="semibold" fontSize="32px">
+          <Image boxSize={isLargerThan624 ? "8rem" : "6rem"} src={FrontEnd} margin="auto" />
+          <Text marginTop="1rem" fontWeight="semibold" fontSize={isLargerThan624 ? "32px" : "28px"}>
             Front-end
           </Text>
-          <Text marginTop="2rem">
+          <Text marginTop="2rem" fontSize={isLargerThan624 ? "22px" : "16px"}>
             É o responsável por toda a estrutura, design, conteúdo,
             comportamento, desempenho e capacidade de resposta de um site ou
             aplicação, ou seja, tudo o que é apresentado aos usuários para
@@ -84,11 +87,11 @@ export const Choice = () => {
           </Text>
         </GridItem>
         <GridItem dir="column">
-          <Image boxSize="8rem" src={BackEnd} margin="auto" />
-          <Text marginTop="1rem" fontWeight="semibold" fontSize="32px">
+          <Image boxSize={isLargerThan624 ? "8rem" : "6rem"} src={BackEnd} margin="auto" />
+          <Text marginTop="1rem" fontWeight="semibold" fontSize={isLargerThan624 ? "32px" : "28px"}>
             Back-end
           </Text>
-          <Text marginTop="2rem">
+          <Text marginTop="2rem" fontSize={isLargerThan624 ? "22px" : "16px"}>
             É responsável pelo servidor, banco de dados e aplicação, ou seja,
             construir e manter esses componentes juntos para que as informações
             sejam organizadas e armazenadas corretamente, o que permite que uma
@@ -99,7 +102,7 @@ export const Choice = () => {
 
       <Text
         marginTop="2rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "18px"}
         textAlign="center"
         fontWeight="semibold"
         fontStyle="italic"
@@ -120,7 +123,7 @@ export const Choice = () => {
         https://roadmap.sh/
       </Text>
       <Text
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "16px"}
         textAlign="end"
         fontWeight="semibold"
         color="purple.400"

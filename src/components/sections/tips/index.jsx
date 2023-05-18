@@ -1,20 +1,22 @@
-import { Box, Heading, ListItem, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Heading, ListItem, Text, UnorderedList, useMediaQuery } from "@chakra-ui/react";
 
 export const Tips = () => {
+  const [isLargerThan624] = useMediaQuery("(min-width: 624px)");
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic" maxW="90%">
         Dicas que aprendi ao longo da jornada:
       </Heading>
       <UnorderedList marginTop="4rem">
-        <ListItem fontSize="22px" mx="2rem" color="purple.900" fontWeight="500">
+        <ListItem fontSize={isLargerThan624 ? "22px" : "20px"} mx="2rem" color="purple.900" fontWeight="500">
           Não tente ver tudo ao mesmo tempo, escolher uma
           <br /> área pra focar mais e procurar aprender a base daquilo
           <br /> até passar para um próximo assunto;
           <br />
           <br />
         </ListItem>
-        <ListItem fontSize="22px" mx="2rem" color="purple.900" fontWeight="500">
+        <ListItem fontSize={isLargerThan624 ? "22px" : "20px"} mx="2rem" color="purple.900" fontWeight="500">
           Trabalhar no Networking: ir em palestras e eventos de
           <br /> tecnologia, fazer conexões nas redes sociais(Linkedin,
           <br /> Instagram), procurar estar acompanhando as notícias e<br />{" "}
@@ -22,7 +24,7 @@ export const Tips = () => {
           <br />
           <br />
         </ListItem>
-        <ListItem fontSize="22px" mx="2rem" color="purple.900" fontWeight="500">
+        <ListItem fontSize={isLargerThan624 ? "22px" : "20px"} mx="2rem" color="purple.900" fontWeight="500">
           Não investir em cursos muito caros até ter certeza que
           <br /> aquilo te interessa.
         </ListItem>
@@ -32,7 +34,7 @@ export const Tips = () => {
 
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.900"
         fontWeight="500"
@@ -49,7 +51,7 @@ export const Tips = () => {
         fontStyle="italic"
         textAlign="end"
         color="purple.900"
-        px="4rem"
+        px={isLargerThan624 ? "4rem" : "2rem"}
       >
         Att, Letícia Baldin
       </Text>

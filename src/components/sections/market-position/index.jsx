@@ -6,6 +6,7 @@ import {
   ListItem,
   Text,
   UnorderedList,
+  useMediaQuery,
 } from "@chakra-ui/react";
 
 // Images imports
@@ -14,6 +15,8 @@ import LinkedinProfile from "../../../assets/images/linkedin-profile.png";
 import CurriculumExemple from "../../../assets/images/curriculum-exemple.png";
 
 export const MarketPosition = () => {
+  const [isLargerThan624] = useMediaQuery("(min-width: 624px)");
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic" maxW="90%">
@@ -22,7 +25,7 @@ export const MarketPosition = () => {
       <UnorderedList>
         <ListItem
           marginTop="4rem"
-          fontSize="22px"
+          fontSize={isLargerThan624 ? "22px" : "18x"}
           mx="2rem"
           color="purple.900"
           fontWeight="500"
@@ -33,27 +36,25 @@ export const MarketPosition = () => {
         </ListItem>
       </UnorderedList>
 
-      <Box w="80%" margin="auto">
-        <Flex alignItems="end">
+      <Box w={isLargerThan624 ? "80%" : "90%"} margin="auto">
+        <Flex marginTop={isLargerThan624 ? "2rem" : "1rem"}>
           <Image boxSize="4rem" src={Linkedin} />
           <Text
-            marginLeft="1.5rem"
-            marginTop="2rem"
-            fontSize="22px"
+            marginLeft={isLargerThan624 ? "1.5rem" : "0.5rem"}
+            fontSize={isLargerThan624 ? "22px" : "18px"}
             textAlign="center"
             fontWeight="bold"
             fontStyle="italic"
             color="purple.800"
           >
-            Monte um perfil profissional e direto no seu
-            <br /> Linkedin!
+            Monte um perfil profissional e direto no seu Linkedin!
           </Text>
         </Flex>
         <Image marginTop="1rem" w="100%" src={LinkedinProfile} />
       </Box>
       <Text
-        marginTop="4rem"
-        fontSize="22px"
+        marginTop={isLargerThan624 ? "4rem" : "2rem"}
+        fontSize={isLargerThan624 ? "22px" : "18px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -68,23 +69,29 @@ export const MarketPosition = () => {
       <Text
         px="2rem"
         marginTop="2rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         fontWeight="bold"
         fontStyle="italic"
+        textAlign={isLargerThan624 ? "start" : "center"}
         color="purple.800"
       >
         Invista no seu currículo também.
       </Text>
 
-      <Flex px="2rem" marginTop="1rem">
-        <Image objectFit="contain" src={CurriculumExemple} />
+      <Box
+        display={isLargerThan624 ? "flex" : ""}
+        marginTop="1rem"
+        justifyContent="space-around"
+      >
+        <Image margin={isLargerThan624 ? "" : "auto"} marginTop={isLargerThan624 ? "" : "1rem"} objectFit="contain" src={CurriculumExemple} />
 
         <Text
-          fontSize="20px"
+          fontSize="18px"
           fontWeight="500"
           textAlign="center"
           color="purple.900"
-          margin="auto"
+          px="1rem"
+          marginTop={isLargerThan624 ? "" : "1rem"}
         >
           Quando iniciei na área, não tinha nenhuma
           <br />
@@ -98,14 +105,15 @@ export const MarketPosition = () => {
           <br />
           Agregar o currículo é muito importante para que
           <br />
-          os recrutadores vejam que está se esforçando e<br />
+          os recrutadores vejam que está se esforçando e
+          <br />
           buscando conhecimento por fora. Também
           <br />
           participei de projetos voluntários que me
           <br />
           ajudaram nisso.
         </Text>
-      </Flex>
+      </Box>
       <Text
         marginTop="2rem"
         fontSize="19px"

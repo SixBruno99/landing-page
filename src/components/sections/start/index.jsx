@@ -1,10 +1,19 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Image,
+  Text,
+  useMediaQuery,
+} from "@chakra-ui/react";
 
 // Images imports
 import Exemple1 from "../../../assets/images/exemple1.jpg";
 import Exemple2 from "../../../assets/images/exemple2.jpg";
 
 export const Start = () => {
+  const [isLargerThan624] = useMediaQuery("(min-width: 624px)");
+
   return (
     <Box marginTop="4rem">
       <Heading color="purple.900" fontStyle="italic">
@@ -12,7 +21,7 @@ export const Start = () => {
       </Heading>
       <Text
         marginTop="4rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -47,7 +56,7 @@ export const Start = () => {
       </Text>
       <Text
         marginTop="2rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         fontWeight="500"
@@ -60,7 +69,7 @@ export const Start = () => {
       </Flex>
       <Text
         marginTop="2rem"
-        fontSize="22px"
+        fontSize={isLargerThan624 ? "22px" : "20px"}
         textAlign="center"
         color="purple.800"
         onClick={() =>

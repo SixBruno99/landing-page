@@ -11,8 +11,6 @@ import { Portifolio } from "./sections/portfolio";
 import { MarketPosition } from "./sections/market-position";
 import { Tips } from "./sections/tips";
 
-
-
 export const Layout = () => {
   return (
     <Flex flexDir="column" justifyContent="space-between" minH="100vh">
