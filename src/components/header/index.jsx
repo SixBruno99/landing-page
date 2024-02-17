@@ -1,11 +1,11 @@
 import { Box, Text, useMediaQuery } from "@chakra-ui/react";
 
 export const Header = () => {
-  const [isLargerThan624] = useMediaQuery('(min-width: 624px)')
+  const [isLargerThan624] = useMediaQuery("(min-width: 624px)");
 
   return (
     <Box
-    borderRadius={isLargerThan624 ? "0 0 120px 120px" : "0 0 90px 90px"}
+      borderRadius={isLargerThan624 ? "0 0 120px 120px" : "0 0 90px 90px"}
       height={isLargerThan624 ? "300px" : "250px"}
       boxShadow="rgba(0, 0, 0, 0.3) 0px 10px 20px"
       justifyContent="center"

@@ -16,7 +16,18 @@ export const Layout = () => {
     <Flex flexDir="column" justifyContent="space-between" minH="100vh">
       <Header />
       <Box w="90%" margin="auto">
-        <Profile />
+        <Profile
+          name="LETÍCIA BALDIN GALVANI"
+          photo="https://github.com/leticiabaldin.png"
+          instagram="lletcode"
+          instagramLink="https://www.instagram.com/lletcode/"
+        />
+        {/* <Profile
+          name="FERNANDA KIPPER"
+          photo="https://avatars.githubusercontent.com/u/61896274?v=4"
+          instagram="kipper.dev"
+          instagramLink="https://www.instagram.com/kipper.dev/"
+        /> */}
         <Box margin="auto" h="2px" w="50%" bg="#2A2F4F" marginTop="2rem"></Box>
       </Box>
       <Box w="90%" margin="auto">
